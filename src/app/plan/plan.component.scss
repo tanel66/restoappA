@@ -1,0 +1,45 @@
+:host(app-plan) {
+	flex: 1;
+
+	.plan-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+
+		h1 {
+			color: black;
+		}
+
+		.tables-container {
+			> * + * {
+				margin-left: 30px;
+			}
+		}
+
+		.city-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			height: 70%;
+			align-items: center;
+
+			.tables-container {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+
+		.beach-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			height: 30%;
+			align-items: center;
+
+			.tables-container {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+<div class="plan-container">
+	<div class="city-container">
+		<h1>City View</h1>
+
+		<div class="tables-container first">
+			<ng-container *ngFor="let table of cityTablesRowOne">
+				<app-table [table]="table"></app-table>
+			</ng-container>
+		</div>
+
+		<div class="tables-container second">
+			<ng-container *ngFor="let table of cityTablesRowTwo">
+				<app-table [table]="table"></app-table>
+			</ng-container>
+		</div>
+
+		<div class="tables-container third">
+			<ng-container *ngFor="let table of cityTablesRowThree">
+				<app-table [table]="table"></app-table>
+			</ng-container>
+		</div>
+	</div>
+
+	<div class="beach-container">
+		<h1>Beach View</h1>
+
+		<div class="tables-container fourth">
+			<ng-container *ngFor="let table of beachTablesRowOne">
+				<app-table [table]="table"></app-table>
+			</ng-container>
+		</div>
+	</div>
+</div>
